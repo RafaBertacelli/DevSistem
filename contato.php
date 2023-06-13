@@ -1,34 +1,59 @@
 <?php
 include("cabecalho.php");
-?>div class="formulario"
-        <h1>Envie sua mensagem</h1>
-        <form action="conexao.php" method="post">
-            
+?>
 
-            <div>
-                <input type="text" placeholder="Digite o seu nome completo*:" name="txNome" required>
+<main>
+    <selection>
+        <div class="contato-container">
+            <div class="contato-mensagem">
+                <div class="contato-mensagem-titulo">
+                    Precisa de ajuda? <br> Conte com a gente. 
+                </div>
+                <div class="contato-mensagem-textinho">
+                    De configurações de conta a permissões, encontre ajuda sobre tudo para o nosso site!
+                </div>
             </div>
+        
+            <div class="formulario-contato">
+                <div class="contato-mensagem-titulo">
+                    Envie sua mensagem
+                </div>
 
-            <div>
-                <input type='email' id='email' name='email' placeholder="Digite seu Email *" required>
+                <form class="form-contato" action="conexao.php" method="post">
+                    <div class="contato-input-div">
+                        <input class="contato-input" type="text" placeholder="Digite o seu nome completo*" name="txNome" required>
+                    </div>
+
+                    <div class="contato-input-div">
+                        <input class="contato-input" type='email' id='email' name='email' placeholder="Digite seu Email*" required>
+                    </div>
+
+                    <div class="contato-input-div">
+                        <input class="contato-input" type="text" placeholder="Digite o assunto" name="txAssunto" required>
+                    </div>
+
+                    <div class="contato-mensagem-textinho-div">
+                        Digite a mensagem:
+                    </div>
+
+                    <div class="contato-input-mensagem-div">
+                        <input class="contato-input-mensagem" type="text"  name="txMensagem" required>
+                    </div>
+                        
+                    <div class="contato-bt">
+                        <input class="contato-botao" type="submit" value="Enviar">                       
+                    </div>
+
+                </form>
             </div>
-            <div>
-                <input type="text" placeholder="Digite o assunto" name="txAssunto" required>
-            </div>
-            <h3>Digite a mensagem:</h3>
-            <div>
-                <input type="text"  name="txMensagem" required>
-            </div>
-            
-            <div>
-                <input class="enviar" type="submit" value="Enviar">
-                
-            </div>
-        </form>
+        </div>
+
+    </selection>
+</main>
 
 
-    </div>
-   
 <?php 
+include("footer.php");
+?>
 include("footer.php");
 ?>
