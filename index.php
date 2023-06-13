@@ -66,7 +66,7 @@ include("cabecalho.php");
                         <div class="textos-caixas">
                             <div class="title-c">
                                 <a href="#">
-                                Saiba mais!
+                                Se inscreva!
                                 </a>
                             </div>
                         
@@ -81,7 +81,7 @@ include("cabecalho.php");
                         <div class="textos-caixas">
                             <div class="title-c">
                                 <a href="#">
-                                Saiba mais!
+                                Descubra!
                                 </a>
                             </div>
                         
@@ -111,7 +111,7 @@ include("cabecalho.php");
                         <div class="textos-caixas">
                             <div class="title-c">
                                 <a href="#">
-                                Saiba mais!
+                                Entenda
                                 </a>
                             </div>
                         
@@ -126,7 +126,7 @@ include("cabecalho.php");
                         <div class="textos-caixas">
                             <div class="title-c">
                                 <a href="#">
-                                Saiba mais!
+                                Saiba tudo
                                 </a>
                             </div>
                         
@@ -141,7 +141,7 @@ include("cabecalho.php");
                         <div class="textos-caixas">
                             <div class="title-c">
                                 <a href="#">
-                                Saiba mais!
+                                Você sabe?
                                 </a>
                             </div>
                         
