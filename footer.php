@@ -1,56 +1,48 @@
 <footer>
-            <div class="footer">
-                <div class="footer-midia">
-                    <div class="footer-titulo">DevSistem</div>
-                    <p>Falem conosco!</p>
-    
-                    <div class="footer-midia-social">
-                        <a href="#" class="footer-instagram" id="instagram">
-                            <i class="footer-instagram-img"><img src="img/instagram.png"></i>
-                        </a>
+            <div class="footer-container">
+                <div class="footer-coluna1">
 
-                        <a href="#" class="footer-wpp" id="wpp">
-                            <i class="footer-wpp-img"><img src="img/whatsapp.png"></i>
-                        </a>
+                    <h1>Dev Sistem</h1>
+                    <br>
+                    <p>Empresa de tecnologia para impulsionar negócios digitais.  Somos especialistas em desenvolvimento de negócios digitais, trabalhando em projetos de Tecnologia desde 2022.
+                    </p>
+                    <br>
+                    <div class="icons">
+                        
+                        <div class="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                        </div>
 
-                        <a href="#" class="footer-github" id="github">
-                            <i class="footer-github-img"><img src="img/github.png"></i>
-                        </a>
+                        <div class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                        </div>
+
+                        <div class="github">
+                                <i class="fa-brands fa-github"></i>
+                        </div>
+
                     </div>
-                </div>
-                <div class="footer-item">
-                    <ul class="footer-item1">
-                        <li>
-                            <h1>Blog</h1>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Ola</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Tudo</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Bem</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-item">
-                    <ul class="footer-item2">
-                        <li>
-                            <h1>Blog</h1>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Ola</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Tudo</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer-letrinhas">Bem</a>
-                        </li>
-                    </ul>
+                </div>    
+                
+                <div class="footer-coluna2">
+
+                    <h1>São Paulo, Brasil</h1>
+                    <br>
+                    <p>R. Feliciano de Mendonça, 290 - Guaianases, São Paulo</p>
+                    <br>
+                    <p>SP, 08460-365</p>
+                    <br>
+                    <p>contato@devSistem.com.br</p>
+
                 </div>
             </div>
+
+            <div class="copyright">
+
+                    <p>&#169 2023 all right reserver</p>
+                    
+                </div>
+                                
         </footer>
 </body>
 </html>
