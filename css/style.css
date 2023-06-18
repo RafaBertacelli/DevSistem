@@ -15,23 +15,22 @@
     align-items: center;
     padding: 18px;
     background-color: #0095E9;
+    justify-content: space-between;
 }
+.itens-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .cabecalho-imagem-logo {
     height: 50px;
 }
-.cabecalho-imagem {
-    padding-right: 880px;
-}
-.cabecalho-imagem-navBar{
-    padding-right: 30px;
-}
-
 .input-group{
     display: flex;
     align-items: center;
     background-color: aliceblue;
     border-radius: 4px;
-   
 }
 
 .input-group input{
@@ -54,7 +53,7 @@
 .icon{
     color: #EDF8FF;
     font-size: 1.30rem;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .icon button{
@@ -64,7 +63,6 @@
 .cabecalho-imagem-navBar{
     height:70px;
 }
-
 nav{
    display: flex;
    flex-direction: row;
