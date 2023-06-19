@@ -52,7 +52,7 @@ include("cabecalho.php");
                     Envie sua mensagem
                 </div>
 
-                <form class="form-contato" action="contato-admin.php" method="POST">
+                <form class="form-contato" action="contato.php" method="POST">
                     <div class="contato-input-div">
                         <input class="contato-input" type="text" placeholder="Digite o seu nome completo*" name="txNome" required>
                     </div>
