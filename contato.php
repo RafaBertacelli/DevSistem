@@ -1,7 +1,7 @@
 <?php
 include("cabecalho.php");
 ?>
-<?php include("conexao.php"); ?>
+<?php include("admin/conexao.php"); ?>
 
 
  <main>
@@ -23,7 +23,7 @@ include("cabecalho.php");
                     Envie sua mensagem
                 </div>
 
-                <form class="form-contato" action="noticias.php" method="POST">
+                <form class="form-contato" action="admin/contato-admin.php" method="POST">
                     <div class="contato-input-div">
                         <input class="contato-input" type="text" placeholder="Digite o seu nome completo*" name="nome" required>
                     </div>
