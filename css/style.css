@@ -325,3 +325,85 @@ footer .footer-coluna2 p{
     
     
 }
+
+/* contato admin */
+
+.conteudo-admin{
+    align-items: center;
+    padding: 10%;
+}
+.conteudo-admin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    padding: 40px;
+}
+.mensagem-admin{
+    padding: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 99%;
+    color: #252525;
+
+}
+
+.parte-da-imagem{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.imagem-admin{
+    padding: 10px;
+}
+.assunto{
+    padding: 10px;
+}
+.user-admin{
+    width: 100px;
+}
+.mensagem-admin-texto{
+
+}
+.parte-da-letra{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 200px;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+.caixinha-contato{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+
+}
+.nome{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 99%;
+    letter-spacing: -0.055em;
+    color: #010101;
+}
+.email{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 99%;
+    letter-spacing: -0.055em;
+    color: #616161;
+    padding-top: 5px;
+}
