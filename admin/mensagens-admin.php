@@ -1,39 +1,51 @@
 <?php
 include("cabecalho-admin.php");
 ?>
+
 <?php
-echo"<main>";
-    echo "<section class="conteudo-admin">";
-       echo"<div class="conteudo-admin-container">";
-          echo "  <div class="mensagem-admin">";
-                Mensagens recentes
-            </div>
-            <div class="caixinha-contato">
-                <div class="parte-da-imagem">
-                    <div class="imagem-admin">
-                        <img src="../img/user-admin.png" alt="logo" class="user-admin">
-                    </div>
-                    <div class="assunto">
-                        
-                    </div>
-                </div>
-                <div class="parte-da-letra">
-                    <div class="nome">
-                        Rafaela Bertacelli
-                    </div>
-                    <div class="mensagem-admin-texto">
-                    Encontrei alguns bugs de lentidão no site. na página de notícias. Grata pela atenção.
-                    Bla bla bla blaaaa. Blá!!
-                    </div>
-                    <div class="email">
-                        rafa@gmail.com
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+include("conexao.php");
+
+$stmt = $pdo->prepare("SELECT * FROM tbContato");
+$stmt -> execute();
+
+    while($row = $stmt->fetch(PDO::FETCH_BOTH)){
+        echo $row["idContato"];
+
+        echo'<main>';
+    echo "<section class='conteudo-admin'>";
+       echo"<div class='conteudo-admin-container'>";
+          echo "<div class='mensagem-admin'>";
+               echo "Mensagens recentes";
+             echo "</div>";
+            echo "<div class='caixinha-contato'>";
+                echo "<div class='parte-da-imagem'>";
+                    echo "<div class='imagem-admin'>";
+                        echo "<img src='../img/user-admin.png' alt='logo' class='user-admin'>";
+                    echo "</div>";
+                   echo "<div class='assunto'>";
+                   echo "</div>";
+                echo "</div>";
+                echo "<div class='parte-da-letra'>";
+                    echo "<div class='nome'>";
+                        echo "Rafaela Bertacelli";
+                    echo "</div>";
+                    echo "<div class='mensagem-admin-texto'>";
+                    echo "Encontrei alguns bugs de lentidão no site. na página de notícias. Grata pela atenção.";
+                    echo "Bla bla bla blaaaa. Blá!!";
+                    echo "</div>";
+                    echo "<div class='email'>";
+                        echo "rafa@gmail.com";
+                    echo "</div>";
+                echo "</div>";
+            echo "</div>";
+        echo "</div>";
+    echo "</section>";
+echo "</main>";
+    }
+
+       
 ?>
+
 
 <?php include("conexao.php"); ?>
 
@@ -88,8 +100,10 @@ echo"<main>";
     echo "</div>";
 ?>
 </div>
+    
 
 
+?>
 <?php 
-include("rodape-admin.php");
+include("footer-admin.php");
 ?>
