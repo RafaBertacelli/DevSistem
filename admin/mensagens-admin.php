@@ -8,46 +8,64 @@ include("conexao.php");
 $stmt = $pdo->prepare("SELECT * FROM tbContato");
 $stmt -> execute();
 
-    while($row = $stmt->fetch(PDO::FETCH_BOTH)){
-        echo $row["idContato"];
+    $i;
 
-        echo'<main>';
+echo'<main>';
     echo "<section class='conteudo-admin'>";
        echo"<div class='conteudo-admin-container'>";
           echo "<div class='mensagem-admin'>";
-               echo "Mensagens recentes";
-             echo "</div>";
+            echo "Mensagens recentes";
+          echo "</div>";
+          
+
+          $exibir = 1;
+    while($row = $stmt->fetch(PDO::FETCH_BOTH)){
+
+      
+        echo $row["idContato"];
+        
+        echo "<div class='conteudo-admin-container-caixinha'>";
             echo "<div class='caixinha-contato'>";
                 echo "<div class='parte-da-imagem'>";
                     echo "<div class='imagem-admin'>";
                         echo "<img src='../img/user-admin.png' alt='logo' class='user-admin'>";
                     echo "</div>";
-                   echo "<div class='assunto'>";
-                   echo "</div>";
+                    echo "<div class='assunto'>";
+                        echo $row[2];
+                    echo "</div>";
                 echo "</div>";
+
                 echo "<div class='parte-da-letra'>";
                     echo "<div class='nome'>";
-                        echo "Rafaela Bertacelli";
+                        echo $row[1];
                     echo "</div>";
                     echo "<div class='mensagem-admin-texto'>";
-                    echo "Encontrei alguns bugs de lentidão no site. na página de notícias. Grata pela atenção.";
-                    echo "Bla bla bla blaaaa. Blá!!";
+                        echo $row[4];
                     echo "</div>";
                     echo "<div class='email'>";
-                        echo "rafa@gmail.com";
+                        echo  $row[3];
                     echo "</div>";
                 echo "</div>";
+                
             echo "</div>";
+        echo "</div>";
+            $exibir ++;
+
+            if($exibir %2==0)
+            echo "</br>";
+       
+         }
+         
         echo "</div>";
     echo "</section>";
 echo "</main>";
-    }
+    
 
        
 ?>
 
 
-<?php include("conexao.php"); ?>
+
 
 <div class="contatoAdmin">
     <?php
@@ -61,7 +79,7 @@ echo "</main>";
         echo $row[3];											
         echo $row[4];
         echo "<br />";      
-    } */
+    } 
 	echo "<div class='recentes'>";
     echo "<h2>Mensagens recenetes</h2>";
     echo "</div>";
@@ -98,12 +116,14 @@ echo "</main>";
     echo "</div>";
     }
     echo "</div>";
+    */
 ?>
 </div>
     
 
 
-?>
+
 <?php 
 include("footer-admin.php");
 ?>
+
