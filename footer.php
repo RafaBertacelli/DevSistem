@@ -20,7 +20,10 @@
                         <div class="github">
                                 <i class="fa-brands fa-github"></i>
                         </div>
+                    </div>
 
+                    <div class="acesso">
+                        <a href="admin/mensagens-admin.php">Acesso admin</a>
                     </div>
                 </div>    
                 
@@ -46,3 +49,4 @@
         </footer>
 </body>
 </html>
+
