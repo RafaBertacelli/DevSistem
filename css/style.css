@@ -340,6 +340,13 @@ footer .footer-coluna2 p{
     background-color: #F1F1F1;
     border-radius: 20px;
     padding: 40px;
+    flex-wrap: nowrap;
+}
+.conteudo-admin-container-caixinha{
+    display: flex;
+    flex-direction: row;
+
+    background-color: #0095E9;
 }
 .mensagem-admin{
     padding: 20px;
@@ -366,9 +373,7 @@ footer .footer-coluna2 p{
 .user-admin{
     width: 100px;
 }
-.mensagem-admin-texto{
 
-}
 .parte-da-letra{
     display: flex;
     flex-direction: column;
@@ -407,3 +412,4 @@ footer .footer-coluna2 p{
     color: #616161;
     padding-top: 5px;
 }
+
