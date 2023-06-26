@@ -3,6 +3,7 @@ include("cabecalho.php");
 ?>
 <main class="conteudo">
     <section>
+        <br>
         <div class="titulo-container">Destaques</div>
         
         <div class="container">
@@ -97,7 +98,7 @@ include("cabecalho.php");
                 </div>              
             </div>
             <div class="c3">
-                <img class="caixa3" src="img/img7.png" alt="">
+                <img class="caixa3" src="img/programando-1.jpg" alt="">
                 <div class="textos-caixas">
                     <div class="title-c">
                         <a href="#">
