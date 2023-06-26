@@ -18,16 +18,16 @@
      </div>
      <div class="itens-cabecalho">
         <div class="icon">
-            <button>
-                <i class="fa-regular fa-circle-user" ></i>
-            </button>
+           
+                <a href="login.php"> <i class="fa-regular fa-circle-user" ></i></a>
+            
            
         </div>
         <div class="input">
             <div class="input-group">
                 <input type="text" class="texto" placeholder="Pesquisar">
                 <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
@@ -45,5 +45,3 @@
         <a class="cabecalho-menu-item"
         href="contato.php">FALE CONOSCO</a>
     </nav>
-
-
