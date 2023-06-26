@@ -20,9 +20,6 @@ echo'<main>';
 
           $exibir = 1;
     while($row = $stmt->fetch(PDO::FETCH_BOTH)){
-
-      
-        echo $row["idContato"];
         
         echo "<div class='conteudo-admin-container-caixinha'>";
             echo "<div class='caixinha-contato'>";
