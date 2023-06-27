@@ -5,8 +5,9 @@ include("cabecalho-admin.php");
 <?php
 include("conexao.php");
 
-$stm = $pdo->prepare("SELECT * FROM tbCadastro");
-$stm -> execute();
+$stmt = $pdo->prepare("SELECT * FROM tbCadastro");
+$stmt -> execute();
+
 
 
 
@@ -14,11 +15,11 @@ echo'<main>';
     echo "<section class='conteudo-admin'>";
        echo"<div class='conteudo-admin-container'>";
           echo "<div class='mensagem-admin'>";
-            echo "pessoas cadastradas";
+            echo "Usuários cadastrados";
           echo "</div>";
           
 
-    while($row = $stm->fetch(PDO::FETCH_BOTH)){
+    while($row = $stmt->fetch(PDO::FETCH_BOTH)){
         
         echo "<div class='conteudo-admin-container-caixinha'>";
             echo "<div class='caixinha-contato'>";
@@ -40,9 +41,7 @@ echo'<main>';
                     echo "<div class='mensagem-admin-texto'>";
                         echo $row[3];
                     echo "</div>";
-                    echo "<div class='email'>";
-                        echo  $row[4];
-                    echo "</div>";
+                   
                 echo "</div>";
                 
             echo "</div>";
@@ -68,6 +67,12 @@ echo "</main>";
  
 </div>
     
+
+
+
+<?php 
+include("footer-admin.php");
+?>
 
 
 
