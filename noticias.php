@@ -131,7 +131,7 @@ include("cabecalho.php");
     
     <div class="container">
         <div class="c3">
-            <img class="caixa3" src="img/Faculdade.png" alt="">
+            <img class="caixa3" src="img/imagem1.png" alt="">
             <div class="textos-caixas">
                 <div class="title-c">
                     <a href="#">
@@ -145,7 +145,7 @@ include("cabecalho.php");
             </div>              
         </div>
         <div class="c3">
-            <img class="caixa3" src="img/aprendiz.png" alt="">
+            <img class="caixa3" src="img/imagem2.png" alt="">
             <div class="textos-caixas">
                 <div class="title-c">
                     <a href="#">
@@ -159,7 +159,7 @@ include("cabecalho.php");
             </div>              
         </div>
         <div class="c3">
-            <img class="caixa3" src="img/3.png" alt="">
+            <img class="caixa3" src="img/imagem3.png" alt="">
             <div class="textos-caixas">
                 <div class="title-c">
                     <a href="#">
@@ -173,7 +173,7 @@ include("cabecalho.php");
             </div>              
         </div>
         <div class="c3">
-            <img class="caixa3" src="img/ProgramandoPython.png" alt="">
+            <img class="caixa3" src="img/imagem4.png" alt="">
             <div class="textos-caixas">
                 <div class="title-c">
                     <a href="#">
