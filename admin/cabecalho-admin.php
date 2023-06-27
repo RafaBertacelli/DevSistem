@@ -18,13 +18,11 @@
      </div>
      <div class="itens-cabecalho">
         <div class="icon">
-            <button>
-                <i class="fa-regular fa-circle-user" ></i>
-            </button>
-           
+            <a href="../login.php"> <i class="fa-regular fa-circle-user" ></i></a>
         </div>
        
        
     </div>
     </header>
+
 
