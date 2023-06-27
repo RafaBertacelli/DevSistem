@@ -23,7 +23,7 @@
                     </div>
                         <br>
                     <div class="acesso">
-                        <a href="admin/mensagens-admin.php">Acesso admin</a>
+                        <a href="admin/tela-admin.php">Acesso admin</a>
                     </div>
                 </div>    
                 
@@ -49,4 +49,3 @@
         </footer>
 </body>
 </html>
-
