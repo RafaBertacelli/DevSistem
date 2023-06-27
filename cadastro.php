@@ -4,48 +4,59 @@ include("cabecalho.php");
 <?php include("admin/conexao.php"); ?>
 
 
-
- <main>
-    <selection>
-	<div class="login">
+<div class="login">
             <div class="contato-mensagem">
                 <div class="contato-mensagem-titulo">
-                    Faça o Cadastro! <br> Bem-vindo. 
+                    Faça o login! <br> Bem-vindo de volta. 
                 </div>
                 <br>
+                <div class="contato-mensagem-textinho">
+                   Novo por aqui? Cadastre-se já!
+                </div>
             </div>
 
-            <div class="contato-Mensagem">
-                <div class="textoCadastro">
-                    <h2>Cadastre-se</h2>   
+            <div class="inputs">
+                <div class="textoLogin">
+                    <h2>Já sou cadastrado</h2>   
                 </div>
 
                 <br>
 
-                <form class="form-cadastro" action="admin/cadastro-admin.php" method="POST">
+                <form class="form-contato" action="cadastro.php" method="POST">
+                    <div class="contato-input-div">
+                        <input class="contato-input" type="text" placeholder="Digite o seu nome *" name="nomeCadas" required>
+                    </div>
+                    <div class="contato-input-div">
+                        <input class="contato-input" type="text" placeholder="Digite o seu sobrenome*" name="sobrenomeCadas" required>
+                    </div>
 
-                        <div class="cadastro-input">
-                            <input class="cadastro-input" type= "text" name="nomeCadas" placeholder="Primeiro nome" class="caixa-cadastro" required>
-				<br>
-			    <input class="cadastro-input" type = "text" name="sobrenomeCadas" placeholder="Sobrenome" class="caixa-cadastro" required>
-			       <br>
-			    <input class="cadastro-input" type=  "email" name="emailCadas" placeholder="Digite seu Email" class="caixa-cadastro" required>
-			       <br>			    
-		            <input class="cadastro-input" type= "text" name="telefoneCadas" placeholder="Telefone *opcional" class="caixa-cadastro">
-			       <br>
-                            <input class="cadastro-input" type= "text" name="senha" placeholder="Digite sua senha" class="caixa-cadastro" required>
-                        </div>
+                    <div class="contato-input-div">
+                        <input class="contato-input" type='email' id='email' name='emailCadas' placeholder="Digite seu Email*" required>
+                    </div>
+                    <div class="contato-input-div">
+                        <input class="contato-input" type='text' id='email' name='telefoneCadas' placeholder="Digite seu Telefone*" required>
+                    </div>
 
-                        <br>
+                    <div class="contato-input-div">
+                        <input class="contato-input" type="text" placeholder="Digite sua senha" name="senha" required>
+                    </div>
 
-                        <div class="enviarCadastro">
-                           <input class="cadastro-botao" type="submit" name="submit" id="submit" value="Enviar">
-                        </div>
+                    
+
+                    
+                        
+                    <div class="contato-bt">
+                        <input class="contato-botao" type="submit" name="submit" id="submit" value="Enviar">                       
+                    </div>
+
                 </form>
+
+
             </div>        
-	</div>
-    </selection>
-</main>
+</div>
+
+
 <?php 
 include("footer.php");
 ?>
+
