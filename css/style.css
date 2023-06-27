@@ -114,6 +114,122 @@ nav a{
     align-items: flex-start;
     justify-content: space-around;
     padding-left: 30px;
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px;
+    background-color: #0095E9;
+    justify-content: space-between;
+}
+.itens-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecalho-imagem-logo {
+    height: 50px;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.input-group input{
+    all: unset;
+    padding: 0.70rem;
+    width: 150px;
+}
+
+.input-group button{
+    all: unset;
+   border: none;
+   color: #0095E9;
+   padding: 0px 1.200rem;
+   font-size: 1.25rem;
+   height: 100%;
+   border-radius: 0px 4px 4px 0px;
+   cursor: pointer;
+}
+
+.icon{
+    color: #EDF8FF;
+    font-size: 1.30rem;
+    padding-right: 15px;
+}
+
+.icon button{
+    all: unset;
+}
+
+.icon a{
+    text-decoration: none;
+    color: #EDF8FF;
+}
+
+.cabecalho-imagem-navBar{
+    height:70px;
+}
+nav{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 10px;
+   background-color: #EDF8FF;
+}
+
+nav a{
+    color: #434343;
+}
+
+
+
+.conteudo{
+    margin-bottom: 48px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+
+.caixa{
+    height: 610px;
+    border-radius: 5px;
+}
+
+.texto-caixa-grande{
+    color: #434343;
+}
+.title-c a{
+    color:#000000;
+}
+
+.caixas-pequenas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 30px;
     
 }
 .c1{
@@ -524,5 +640,24 @@ footer .footer-coluna2 p{
 }
 
 .login-nao-cadastrado a:hover{
+    color: #0095E9;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem;
+}
+
+.links a{
+    color:  #232222;
+    font-size: 300%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.links a:hover{
     color: #0095E9;
 }
