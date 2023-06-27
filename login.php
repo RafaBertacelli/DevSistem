@@ -42,7 +42,7 @@ include("cabecalho.php");
                         </div>
 
                         <div class="login-nao-cadastrado">
-                            <a href="#">Não tem uma conta? Cadastre-se!</a>
+                              <a href="cadastro.php">Não tem uma conta? Cadastre-se!</a>
                         </div>
                 </form>
 
