@@ -61,7 +61,7 @@ echo "</main>";
        
 ?>
         <div class="botaomsg">
-        <a href="ordemMensagem.php"> <button class="contato-botao">Trocar ordem?</button></a>   
+        <a href="mensagem-admin-invertida"> <button class="contato-botao">Trocar ordem?</button></a>   
         </div>
 
 <?php 
