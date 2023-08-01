@@ -5,7 +5,7 @@ include("cabecalho-admin.php");
 <?php
 include("conexao.php");
 
-$stmt = $pdo->prepare("SELECT * FROM tbContato");
+$stmt = $pdo->prepare("SELECT * FROM tbContato ORDER BY nome ");
 $stmt -> execute();
 
     $i;
@@ -42,26 +42,26 @@ echo'<main>';
                     echo "<div class='email'>";
                         echo  $row[3];
                     echo "</div>";
+                    echo "</div>";
+                    
                 echo "</div>";
-                
             echo "</div>";
-        echo "</div>";
-            $exibir ++;
+                $exibir ++;
 
-            if($exibir %2==0)
-            echo "</br>";
-       
-         }
-         
-        echo "</div>";
-    echo "</section>";
-echo "</main>";
-    
+                if($exibir %2==0)
+                echo "</br>";
+        
+            }
+            
+            echo "</div>";
+        echo "</section>";
+    echo "</main>";
+        
 
-       
-?>
-
-
+        
+    ?>
+              <a href="mensagem-admin-invertida.php"> <button>Trocar ordem?</button></a>   
+                  
 
 
 <div class="contatoAdmin">
