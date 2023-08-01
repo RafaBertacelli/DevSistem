@@ -7,5 +7,12 @@ create table tbCadastro(
   senha varchar(40)
 );
 
+create table tbContato(
+	idContato int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(40),
+    email varchar(40),
+    assunto varchar(200),
+    mensagem varchar(2000)
+);
 
 
