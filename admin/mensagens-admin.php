@@ -43,7 +43,7 @@ echo'<main>';
                         echo  $row[3];
                     echo "</div>";
                 echo "</div>";
-                echo "<a href='/DevSistem/admin/contato-admin-excluir.php?id=$row[idContato]'> Excluir </a>";
+                echo "<a href='/DevSistem-master/admin/contato-admin-excluir.php?id=$row[idContato]'> Excluir </a>";
             echo "</div>";
         echo "</div>";
             $exibir ++;
@@ -67,5 +67,4 @@ echo "</main>";
 <?php 
 include("footer-admin.php");
 ?>
-
 
