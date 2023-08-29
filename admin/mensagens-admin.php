@@ -43,7 +43,7 @@ echo'<main>';
                         echo  $row[3];
                     echo "</div>";
                 echo "</div>";
-                
+                echo "<a href='/DevSistem-master/admin/contato-admin-excluir.php?id=$row[idContato]'> Excluir </a>";
             echo "</div>";
         echo "</div>";
             $exibir ++;
@@ -61,10 +61,11 @@ echo "</main>";
        
 ?>
         <div class="botaomsg">
-        <a href="mensagem-admin-invertida"> <button class="contato-botao">Trocar ordem?</button></a>   
+        <a href="mensagem-admin-invertida.php"> <button class="contato-botao">Trocar ordem?</button></a>   
         </div>
 
 <?php 
 include("footer-admin.php");
 ?>
+
 
