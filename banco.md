@@ -15,4 +15,10 @@ create table tbContato(
     mensagem varchar(2000)
 );
 
+create table tbNoticia(
+  idNoticia int PRIMARY KEY AUTO_INCREMENT,
+    titulo varchar(40),
+    noticia varchar (2000),
+);
+
 
