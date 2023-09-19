@@ -36,16 +36,20 @@ include("conexao.php");
 </div>
 
 <div class="titulo-container">Notícias adicionadas</div>
-    <div class="container">
-        <div class="container-noticias">
-            <div class="parte-da-imagem-notiicas">
-                <img class="caixa3" src="../img/programando-1.jpg" alt="">
-                <a href="#">EDITAR</a>
-                <a href="#">EXCLUIR</a>
-            </div>
-            <div class="parte-da-noticia-noticias">
-                <form class="form-noticia" action="noticias.php" method="POST">
-               <?php
+    <?php
+    echo '<div class="container">';
+        echo '<div class="container-noticias">';
+            echo   '<div class="parte-da-imagem-notiicas">';
+         
+                echo '<img class="caixa3" src="../img/programando-1.jpg" alt="">';
+
+                
+             
+                
+            echo '</div>';
+            echo '<div class="parte-da-noticia-noticias">';
+                echo '<form class="form-noticia" action="noticias.php" method="POST">';
+               
                include("conexao.php");
                $stmt = $pdo->prepare("SELECT * FROM tbNoticias");
                $stmt -> execute();
@@ -57,9 +61,16 @@ include("conexao.php");
                     echo"<div class='textob'>";
                          echo $row[2];
                     echo"</div>";
-               }
-                ?>
 
+                    echo"<div class='exclusao'>";
+                        echo "<a href='/DevSistem/admin/delet-noticia.php?id=$row[idNoticia]'> EXCLUIR </a>";
+                    echo"</div>";
+
+                    echo"<div class='alteracao'>";
+                        echo '<a href="#">EDITAR</a>';
+                    echo"</div>"; 
+               }
+    ?>
                 </form>
             </div>
     </div>
