@@ -4,6 +4,36 @@ include("cabecalho.php");
 <main class="conteudo">
     <section>
         <br>
+
+        <div class="titulo-container">Notícias</div>
+    <div class="container">
+        <div class="container-noticias">
+            <div class="parte-da-imagem-notiicas">
+                <img class="caixa3" src="img/programando-1.jpg" alt="">
+
+            </div>
+            <div class="parte-da-noticia-noticias">
+                <form class="form-noticia" action="noticias.php" method="POST">
+               <?php
+               include("admin/conexao.php");
+               $stmt = $pdo->prepare("SELECT * FROM tbNoticias");
+               $stmt -> execute();
+
+               while($row = $stmt->fetch(PDO::FETCH_BOTH)){
+                    echo'<div class="noticia-titulo">';
+                        echo $row[1];
+                    echo"</div>";
+                    echo'<div class="noticia-input-noticia">';
+                         echo $row[2];
+                    echo"</div>";
+               }
+                ?>
+
+                </form>
+            </div>
+    </div>
+</div>
+
         <div class="titulo-container">Destaques</div>
         
         <div class="container">
