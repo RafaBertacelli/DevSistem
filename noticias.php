@@ -2,9 +2,6 @@
 include("cabecalho.php");
 ?>
 
-
-
-
 <main class="conteudo">
     <section>
         <br>
