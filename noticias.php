@@ -7,32 +7,42 @@ include("cabecalho.php");
         <br>
 
         <div class="titulo-container">Notícias</div>
-    <div class="container">
+    <div class="containerN">
         <div class="container-noticias">
-            <div class="parte-da-imagem-notiicas">
-                <img class="caixa3" src="img/programando-1.jpg" alt="">
 
-            </div>
-            <div class="parte-da-noticia-noticias">
-                <form class="form-noticia" action="noticias.php" method="POST">
                <?php
+                $exibir = 1;
+
+
                include("admin/conexao.php");
                $stmt = $pdo->prepare("SELECT * FROM tbNoticias");
                $stmt -> execute();
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
+            echo'<div class="parte-da-imagem-notiicas">';
+                echo'<img class="caixa3" src="img/programando-1.jpg" alt="">';
+            echo'</div>';
+            echo'<div class="parte-da-noticia-noticias">';
+                echo'<form class="form-noticia" action="noticias.php" method="POST">';
                     echo'<div class="noticia-titulo">';
                         echo $row[1];
                     echo"</div>";
                     echo'<div class="noticia-input-noticia">';
                          echo $row[2];
                     echo"</div>";
+
+                    $exibir ++;
+
+                    
+            echo'</div>';
+                echo'</form>';
                }
                 ?>
 
-                </form>
-            </div>
+               
+        </div>
     </div>
+</div>
 </div>
 
         <div class="titulo-container">Destaques</div>
