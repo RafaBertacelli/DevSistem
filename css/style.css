@@ -554,3 +554,65 @@ footer .footer-coluna2 p{
     margin-bottom: 20px;
 }
 
+.container-noticias{
+    display: flex;
+    flex-direction: row;
+}
+.parte-da-imagem-notiicas{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.titulo-noticias1{
+    padding-left: 45px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15=8px;
+    line-height: 99%;
+    padding-top: 20px;
+}
+
+.titulo-noticias2{
+    padding-left: 45px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 99%;
+    padding-top: 3px;
+}
+.titleb{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 99%;
+}
+.textob{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 99%;
+    color: #434343;
+}
+.noticia-botao{
+    width: 89px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #3BBA00;
+    color: #D9D9D9;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.noticia-botao2{
+    padding-top: 5px;
+}
+
