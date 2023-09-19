@@ -1,6 +1,10 @@
 <?php
 include("cabecalho.php");
 ?>
+
+
+
+
 <main class="conteudo">
     <section>
         <br>
@@ -98,7 +102,7 @@ include("cabecalho.php");
         </div>
         <div class="titulo-container">Linguagens </div>
         
-        <div class="container">
+    <div class="container">
             <div class="c3">
                 <img class="caixa3" src="img/img5.png" alt="">
                 <div class="textos-caixas">
@@ -141,7 +145,7 @@ include("cabecalho.php");
                     </div>
                 </div>              
             </div>
-            <div class="c3">
+        <div class="c3">
             <img class="caixa3" src="img/img8.png" alt="">
             <div class="textos-caixas">
                 <div class="title-c">
@@ -155,7 +159,7 @@ include("cabecalho.php");
                 </div>
             </div>              
         </div>
-            </div>
+    </div>
             
         <div class="titulo-container">Dicas de Programação</div>
     
@@ -204,21 +208,24 @@ include("cabecalho.php");
         </div>
         <div class="c3">
             <img class="caixa3" src="img/imagem4.png" alt="">
-            <div class="textos-caixas">
-                <div class="title-c">
-                    <a href="#">
-                        Entenda
-                    </a>
-                </div>
-                
-                <div class="text-c">
-                Os benefícios de incorporar a inteligência artificial no processo de programação
-            </div>
+                <div class="textos-caixas">
+                    <div class="title-c">
+                        <a href="#">
+                            Entenda
+                        </a>
+                    </div>
+                    
+                    <div class="text-c">
+                    Os benefícios de incorporar a inteligência artificial no processo de programação
+                    </div>
                 </div>              
-            </div>
-           
-            
-        </div>
+    </div>
+</div>
+
+
+
+
+
         </section>
 </main>  
  <?php 
