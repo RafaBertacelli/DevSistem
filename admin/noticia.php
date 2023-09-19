@@ -5,7 +5,7 @@
 
     include('./conexao.php');
 
-    $stmt = $pdo->prepare("INSERT INTO tbNoticias VALUES(null, '$titulo','$noticia')");
+    $stmt = $pdo->prepare("INSERT INTO tbNoticia VALUES(null, '$titulo','$noticia')");
     $stmt ->execute();
 
     header('location:../noticias.php');

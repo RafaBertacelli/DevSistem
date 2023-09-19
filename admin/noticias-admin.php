@@ -20,6 +20,7 @@ include("conexao.php");
                 <img class="caixa3" src="../img/programando-1.jpg" alt="">
             </div>
             <div class="parte-da-noticia-noticias">
+
                 <form class="form-noticia" action="noticia.php" method="POST">
                     <div class="noticia-input-titulo">
                         <input class="title-c" type="text" placeholder="Título da notícia" name="titulo" required>
@@ -31,6 +32,7 @@ include("conexao.php");
                         <input class="noticia-botao" type="submit" name="submit" id="submit" value="ENVIAR">                       
                     </div>
                 </form>
+                
             </div>
     </div>
 </div>
@@ -42,16 +44,13 @@ include("conexao.php");
             echo   '<div class="parte-da-imagem-notiicas">';
          
                 echo '<img class="caixa3" src="../img/programando-1.jpg" alt="">';
-
-                
-             
                 
             echo '</div>';
             echo '<div class="parte-da-noticia-noticias">';
                 echo '<form class="form-noticia" action="noticias.php" method="POST">';
                
                include("conexao.php");
-               $stmt = $pdo->prepare("SELECT * FROM tbNoticias");
+               $stmt = $pdo->prepare("SELECT * FROM tbNoticia");
                $stmt -> execute();
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
@@ -67,7 +66,7 @@ include("conexao.php");
                     echo"</div>";
 
                     echo"<div class='alteracao'>";
-                        echo '<a href="#">EDITAR</a>';
+                        echo "<a href='/DevSistem/admin/noticias-update.php?id=$row[idNoticia]'> UPDATE </a>";
                     echo"</div>"; 
                }
     ?>
