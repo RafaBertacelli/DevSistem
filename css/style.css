@@ -557,11 +557,15 @@ footer .footer-coluna2 p{
 .container-noticias{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    padding-left: 20px;
 }
 .parte-da-imagem-notiicas{
     display: flex;
     flex-direction: column;
-    padding-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .titulo-noticias1{
@@ -616,3 +620,16 @@ footer .footer-coluna2 p{
     padding-top: 5px;
 }
 
+.containerN{
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.sai{
+    padding-top: 20px;
+    padding: 20px;
+}
