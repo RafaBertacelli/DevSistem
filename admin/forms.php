@@ -6,7 +6,7 @@
 
     include('./conexao.php');
 
-    $stmt = $pdo->prepare("UPDATE tbNoticia SET titulo = '$titulo', noticia = '$noticia' WHERE idNoticia = $id");
+    $stmt = $pdo->prepare("UPDATE tbNoticias SET titulo = '$titulo', noticia = '$noticia' WHERE idNoticia = $id");
     $stmt ->execute();
 
     header('location:../noticias.php');

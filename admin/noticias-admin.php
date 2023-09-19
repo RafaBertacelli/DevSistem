@@ -20,7 +20,6 @@ include("conexao.php");
                 <img class="caixa3" src="../img/programando-1.jpg" alt="">
             </div>
             <div class="parte-da-noticia-noticias">
-
                 <form class="form-noticia" action="noticia.php" method="POST">
                     <div class="noticia-input-titulo">
                         <input class="title-c" type="text" placeholder="Título da notícia" name="titulo" required>
@@ -32,35 +31,37 @@ include("conexao.php");
                         <input class="noticia-botao" type="submit" name="submit" id="submit" value="ENVIAR">                       
                     </div>
                 </form>
-                
             </div>
     </div>
 </div>
 
-<div class="titulo-container">Notícias adicionadas</div>
-    <?php
-    echo '<div class="container">';
-        echo '<div class="container-noticias">';
-            echo   '<div class="parte-da-imagem-notiicas">';
-         
-                echo '<img class="caixa3" src="../img/programando-1.jpg" alt="">';
-                
-            echo '</div>';
-            echo '<div class="parte-da-noticia-noticias">';
-                echo '<form class="form-noticia" action="noticias.php" method="POST">';
-               
+
+    <div class="titulo-container">Notícias Adicionadas</div>
+    <div class="containerN">
+        <div class="container-noticias">
+
+               <?php
+                $exibir = 1;
+
+
                include("conexao.php");
-               $stmt = $pdo->prepare("SELECT * FROM tbNoticia");
+               $stmt = $pdo->prepare("SELECT * FROM tbNoticias");
                $stmt -> execute();
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
-                    echo"<div class='titleb'>";
+            echo'<div class="parte-da-imagem-notiicas">';
+                echo'<img class="caixa3" src="../img/programando-1.jpg" alt="">';
+            echo'</div>';
+            echo'<div class="parte-da-noticia-noticias">';
+                echo'<form class="form-noticia" action="noticias.php" method="POST">';
+                    echo'<div class="noticia-titulo">';
                         echo $row[1];
                     echo"</div>";
-                    echo"<div class='textob'>";
+                    echo'<div class="noticia-input-noticia">';
                          echo $row[2];
                     echo"</div>";
 
+                    
                     echo"<div class='exclusao'>";
                         echo "<a href='/DevSistem/admin/delet-noticia.php?id=$row[idNoticia]'> EXCLUIR </a>";
                     echo"</div>";
@@ -68,11 +69,20 @@ include("conexao.php");
                     echo"<div class='alteracao'>";
                         echo "<a href='/DevSistem/admin/noticias-update.php?id=$row[idNoticia]'> UPDATE </a>";
                     echo"</div>"; 
+
+                    $exibir ++;
+
+                    
+            echo'</div>';
+                echo'</form>';
                }
-    ?>
-                </form>
-            </div>
+                ?>
+
+               
+        </div>
     </div>
+</div>
+</div>
 <?php 
 include("footer-admin.php");
 ?>
