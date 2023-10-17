@@ -27,6 +27,9 @@ include("conexao.php");
                     <div class="noticia-input-noticia">
                         <input class="text-c" type="text" placeholder="Notícia" name="noticia" required>
                     </div>
+                    <div class="noticia-input-noticia">
+                        <input class="text-c" type="file" placeholder="Url" name="caminhoImg" required>
+                    </div>
                     <div class="noticia-botao2">
                         <input class="noticia-botao" type="submit" name="submit" id="submit" value="ENVIAR">                       
                     </div>
@@ -50,7 +53,7 @@ include("conexao.php");
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
             echo'<div class="parte-da-imagem-notiicas">';
-                echo'<img class="caixa3" src="../img/programando-1.jpg" alt="">';
+                    echo'<img src="../img/'.$row[3].'" class="caixa3"  alt="Imagem1">';
             echo'</div>';
             echo'<div class="parte-da-noticia-noticias">';
                 echo'<form class="form-noticia" action="noticias.php" method="POST">';
