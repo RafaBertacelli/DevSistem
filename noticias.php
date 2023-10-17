@@ -20,7 +20,7 @@ include("cabecalho.php");
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
             echo'<div class="parte-da-imagem-notiicas">';
-                echo'<img class="caixa3" src="img/programando-1.jpg" alt="">';
+                echo'<img class="caixa3" src="img/'.$row[3].'" alt="Imagem">';
             echo'</div>';
             echo'<div class="parte-da-noticia-noticias">';
                 echo'<form class="form-noticia" action="noticias.php" method="POST">';
