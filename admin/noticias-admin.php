@@ -20,7 +20,7 @@ include("conexao.php");
                 <img class="caixa3" src="../img/programando-1.jpg" alt="">
             </div>
             <div class="parte-da-noticia-noticias">
-                <form class="form-noticia" action="noticia.php" method="POST">
+                <form class="form-noticia" action="noticia.php" method="POST" enctype="multipart/form-data">
                     <div class="noticia-input-titulo">
                         <input class="title-c" type="text" placeholder="Título da notícia" name="titulo" required>
                     </div>
@@ -28,7 +28,7 @@ include("conexao.php");
                         <input class="text-c" type="text" placeholder="Notícia" name="noticia" required>
                     </div>
                     <div class="noticia-input-noticia">
-                        <input class="text-c" type="file" placeholder="Url" name="caminhoImg" required>
+                        <input class="text-c" type="file" name="arqimage" class='form-control-file' required>
                     </div>
                     <div class="noticia-botao2">
                         <input class="noticia-botao" type="submit" name="submit" id="submit" value="ENVIAR">                       
@@ -52,32 +52,38 @@ include("conexao.php");
                $stmt -> execute();
 
                while($row = $stmt->fetch(PDO::FETCH_BOTH)){
-            echo'<div class="parte-da-imagem-notiicas">';
+            echo '<div class="c3">';
+                echo'<div class="parte-da-imagem-notiicas">';
                     echo'<img src="../img/'.$row[3].'" class="caixa3"  alt="Imagem1">';
-            echo'</div>';
-            echo'<div class="parte-da-noticia-noticias">';
-                echo'<form class="form-noticia" action="noticias.php" method="POST">';
-                    echo'<div class="noticia-titulo">';
-                        echo $row[1];
-                    echo"</div>";
-                    echo'<div class="noticia-input-noticia">';
-                         echo $row[2];
-                    echo"</div>";
+                echo'</div>';
+                echo'<div class="parte-da-noticia-noticias">';
+                        echo'<form class="form-noticia" action="noticias.php" method="POST">';
+                            echo '<div class="textos-caixas">';
+                                echo'<div class="title-c">';
+                                    echo '<a href="#">';
+                                        echo $row[1];
+                                    echo '</a>';
+                                echo"</div>";
+                                echo'<div class="text-c">';
+                                        echo $row[2];
+                                echo"</div>";
+                            echo"</div>";
 
+                            
                     
-                    echo"<div class='exclusao'>";
-                        echo "<a href='/DevSistem/admin/delet-noticia.php?id=$row[idNoticia]'> EXCLUIR </a>";
-                    echo"</div>";
+                            echo"<div class='exclusao'>";
+                            echo "<a href='/DevSistem/admin/delet-noticia.php?id=$row[idNoticia]'> EXCLUIR </a>";
+                            echo"</div>";
 
-                    echo"<div class='alteracao'>";
-                        echo "<a href='/DevSistem/admin/noticias-update.php?id=$row[idNoticia]'> UPDATE </a>";
-                    echo"</div>"; 
+                            echo"<div class='alteracao'>";
+                                echo "<a href='/DevSistem/admin/noticias-update.php?id=$row[idNoticia]'> UPDATE </a>";
+                            echo"</div>"; 
 
-                    $exibir ++;
+                            $exibir ++;
 
-                    
-            echo'</div>';
-                echo'</form>';
+                            echo'</div>';
+                        echo'</form>';
+            echo'</div>';        
                }
                 ?>
 
@@ -86,6 +92,4 @@ include("conexao.php");
     </div>
 </div>
 </div>
-<?php 
-include("footer-admin.php");
-?>
+

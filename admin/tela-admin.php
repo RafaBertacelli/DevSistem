@@ -10,6 +10,7 @@ include("cabecalho-admin.php");
         <div>
             <a href="mensagens-admin.php">Ver mensagens</a>
         </div>
+        <br>
 
         <div>
             <a href="noticias-admin.php">Cadastrar notícias</a>
