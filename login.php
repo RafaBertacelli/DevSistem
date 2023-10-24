@@ -2,9 +2,6 @@
 include("cabecalho.php");
 ?>
 
-
-
-
 <div class="login">
             <div class="contato-mensagem">
                 <div class="contato-mensagem-titulo">
@@ -32,7 +29,7 @@ include("cabecalho.php");
                         <br>
 
                         <div class="senha">
-                            <input type="text" name="txSenha" placeholder="Digite sua senha" class="caixa-login">
+                            <input type="passsword" name="txSenha" placeholder="Digite sua senha" class="caixa-login">
                         </div>
 
                         <br>
