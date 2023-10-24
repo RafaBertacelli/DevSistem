@@ -19,7 +19,12 @@ create table tbNoticias(
   idNoticia int PRIMARY KEY AUTO_INCREMENT,
     titulo varchar(40),
     noticia varchar (2000),
-    caminhoImg varchar(200),
+    caminhoImg varchar(200)
 );
 
 
+create table tbUsuario(
+  idUsuario int PRIMARY KEY AUTO_INCREMENT,
+  usuario VARCHAR (10),
+  senha VARCHAR (10)
+);
