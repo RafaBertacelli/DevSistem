@@ -1,23 +1,21 @@
 <?php
-    $usuario = $_POST['txUser'];
+    $user = $_POST['txUser'];
     $pass = $_POST['txSenha'];
-   // echo $usuario;
-   // echo  $senha;
     
     include('conexao.php');
 
-    $stmt = $pdo->prepare("SELECT COUNT(usuario) FROM tbUsuario WHERE usuario = 'admin' AND senha = '1234'");
-    $stmt ->execute();
-
-    $row = $stmt->fetch(PDO::FETCH_ASSOC);
-   
-    echo($row['COUNT(usuario)']);
+    if ($user == "admin") {
+        $stmt = $pdo->prepare("SELECT COUNT(usuario) 'count' FROM tbusuario WHERE usuario = '$user' AND senha = '$pass'");
+        $stmt ->execute();
     
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    //   if ($row['COUNT(usuario)']){
-    //      header('location:tela-admin.php');
-    //  } else {
-    //       header('location:../login.php');
-    //   }
+        if ($row["count"] != 0) {
+            header('location:tela-admin.php');
+        }
+    
+    } else { 
+        header('location:../login.php');
+    }
 
 ?>
