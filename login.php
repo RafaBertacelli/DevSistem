@@ -20,7 +20,7 @@ include("cabecalho.php");
 
                 <br>
 
-                <form class="form-login" action="">
+                <form class="form-login" action="admin/verificacao-admin.php" method="POST">
 
                         <div class="usuario">
                             <input type="text" name="txUser" placeholder="Digite seu email" class="caixa-login">
